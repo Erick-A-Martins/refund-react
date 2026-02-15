@@ -2,13 +2,14 @@ import { classMerge } from "../utils/classMerge"
 
 type Props = React.ComponentProps<"button"> & {
     isLoading?: boolean
-    variant?: "base" | "icon"
+    variant?: "base" | "icon" | "iconSmall"
 }
 
 const variants = {
     button: {
         base: "h-12",
         icon: "h-12 w-12",
+        iconSmall: "h-10 w-10",
     }
 }
 
