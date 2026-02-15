@@ -4,12 +4,13 @@ import { CATEGORIES } from "../utils/categories";
 import { Input } from "../components/Input"
 import { Button } from "../components/Button";
 import { RefundItem } from "../components/RefundItem";
+import { formatCurrency } from "../utils/formatCurrency";
 
 const REFUND_EXAMPLE = {
     id: "123",
     name: "Erick",
     category: "Transporte",
-    amount: "34.5",
+    amount: formatCurrency(34.5),
     categoryImg: CATEGORIES["transport"].icon
 }
 
