@@ -5,18 +5,9 @@ import { ManagerRoutes } from "./ManagerRoutes";
 import { Loading } from "../components/Loading";
 import { useAuth } from "../hooks/useAuth";
 
-const isLoading = false;
-
-const session = {
-    user: {
-        role: "",
-    },
-}
-
 export function Routes(){
 
-    const context = useAuth();
-    console.log(context);
+    const { session, isLoading } = useAuth();
 
     function Route() {
         switch (session?.user.role) {
